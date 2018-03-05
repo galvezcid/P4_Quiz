@@ -188,8 +188,8 @@ exports.editCmd = (rl, id) => {
 exports.creditsCmd = rl => {
 
     log('Autores de la practica:');
-    log('Ignacio Gálvez','green');
-    rl.prompt();d
+    log('IGNACIO Gálvez','green');
+    rl.prompt();
 
 };
 
