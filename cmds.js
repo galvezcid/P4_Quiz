@@ -152,10 +152,10 @@ exports.playCmd = (rl) => {
             .then(answer => {
                 if(answer.toLowerCase().trim() === quiz.answer.toLowerCase().trim()){
                     score++;
-                    console.log("CORRECTO - Lleva ",score, "aciertos");
+                    console.log("CORRECTO: ",score, "aciertos");
                     resolve(playOne());
                 } else {
-                    console.log("INCORRECTO.\nFin del examen. Aciertos:");
+                    console.log("INCORRECTO. FIN Aciertos:");
                     resolve();
                 }   
             })
@@ -228,7 +228,7 @@ exports.editCmd = (rl,id) => {
 };
 
 exports.creditsCmd = (rl) => {
-    log('Autores de la practica:');
+    log('Autor de la practica:');
     log('Ignacio Gálvez Cid','green');
     rl.prompt();
 }
